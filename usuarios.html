@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usuários</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Usuários</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="usuarios.html">Usuários</a>
+    <a href="gastos.html">Gastos</a>
+    <a href="grafico.html">Gráficos</a>
+  </nav>
+</header>
+
+<main class="container fade-in">
+  <section class="card">
+    <h2>Cadastro de Usuário</h2>
+    <input id="nome" placeholder="Nome">
+    <input id="idade" placeholder="Idade">
+    <input id="email" placeholder="Email">
+    <button class="btn" onclick="cadastrarUsuario()">Cadastrar</button>
+    <p id="msgUsuario"></p>
+  </section>
+
+  <section class="card">
+    <h2>Selecionar Usuário</h2>
+    <input id="usuarioIndex" type="number" min="1" placeholder="Número do usuário">
+    <button class="btn" onclick="selecionarUsuario()">Selecionar</button>
+    <p id="usuarioSelecionado">Nenhum usuário selecionado</p>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gastos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Gastos</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="usuarios.html">Usuários</a>
+    <a href="gastos.html">Gastos</a>
+    <a href="grafico.html">Gráficos</a>
+  </nav>
+</header>
+
+<main class="container fade-in">
+  <section class="card">
+    <h2>Adicionar Gasto</h2>
+    <input id="descricao" placeholder="Descrição">
+    <input id="valor" type="number" placeholder="Valor">
+    <button class="btn" onclick="adicionarGasto()">Adicionar</button>
+    <p id="msgGasto"></p>
+  </section>
+
+  <section class="card">
+    <h2>Lista de Gastos</h2>
+    <ul id="listaGastos"></ul>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
